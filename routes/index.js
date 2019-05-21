@@ -11,7 +11,7 @@ router.get('/workers', (req, res) => {
             res.json(usr);
         })
         .catch(err => {
-            console.log(err)
+            res.status(404).send(err)
         })
 });
 
@@ -24,7 +24,7 @@ router.get('/workers/:id/orders', (req, res) => {
             res.json(sortedList)
         })
         .catch(err => {
-            console.log(err)
+            res.status(404).send(err)
         })
 });
 
@@ -37,7 +37,7 @@ router.post('/workers', (req, res) => {
             res.send(user)
         })
         .catch(err => {
-            console.log(err)
+            res.status(400).send(err)
         })
 })
 
@@ -49,7 +49,7 @@ router.delete('/workers/:id',(req, res) => {
         res.send(success)
     })
     .catch((err) => {
-        console.log(err)
+        res.status(400).send(err)
     })
 })
 
@@ -63,7 +63,7 @@ router.post('/orders', (req, res) => {
             res.send(user)
         })
         .catch(err => {
-            console.log(err)
+            res.status(400).send(err)
         })
 })
 
@@ -74,7 +74,7 @@ router.get('/orders', (req, res) => {
             res.json( order );
         })
         .catch(err => {
-            console.log(err)
+            res.status(404).send(err)
         })
 });
 

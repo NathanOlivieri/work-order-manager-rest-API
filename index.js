@@ -10,7 +10,7 @@ const express = require('express')
         MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/hatchdb'
 
 //Mongoose set-up
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
