@@ -15,4 +15,4 @@ Things this server still needs
 
 - customized error reponses with instructions. As seen in my /put route but for every route. Currently only default errors are returned. helpfull but not pretty.
 
--app tested with postman. 
+-app tested with postman throuroughly.
