@@ -16,7 +16,7 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "mocha": "^6.1.4",
-    "mongoose": "^5.5.10",
+    "mongoose": "^5.7.5",
     "request": "^2.88.0"
   }
 }
